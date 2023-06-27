@@ -1,0 +1,102 @@
+\documentclass{article}
+
+% Bullet preamble
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\diamond$}
+\renewcommand{\labelitemiii}{$\circ$}
+
+\newcommand{\mytab}{\hspace{0.3cm}}
+
+% Math preamble
+\usepackage{amsmath, amsthm, amsfonts, amssymb, amsfonts}
+\usepackage{xfrac}
+\numberwithin{equation}{section}
+
+% Table preamble
+\usepackage{multirow}
+
+% Image preamble
+\usepackage{graphicx}
+\usepackage{float}   % for controlling float position
+
+%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows, calc, fit}
+
+\tikzset{
+    ->, % makes the edges directed
+    >=stealth', % makes the arrow heads bold
+    node distance=3cm, % specifies the minimum distance between two nodes. Change if necessary.
+    state/.style={
+            draw,
+            rounded corners=3mm, % set the radius of the rounded corners
+            thick,
+            fill=gray!20,
+            inner sep=0pt, % reduces the padding inside the node
+            minimum width=1.5cm, % set the minimum width of the node
+            minimum height=0.8cm, % set the minimum height of the node
+        },
+    %every state/.style={thick, fill=gray!20}, % sets the properties for each ’state’ node
+    initial text=$START$, % sets the text that appears on the start arrow
+    initial distance=1cm, % determines the distance of the start arrow
+    initial where=above % tells where the start arrow should terminate
+}
+%%%%%%%%%%%%%%%
+
+
+% Package for hiding links, click-able references
+\usepackage[hidelinks]{hyperref}
+
+% Margion specification
+\usepackage[margin=1in,left=1in,includefoot]{geometry}
+% Header, footer and page number
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%clear header and footer
+\fancyhead{}
+\fancyfoot{}
+% put page number on right side of footer
+\fancyfoot[R]{\thepage}
+% remove header and footer line
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+% Include title page
+\include{title_page}
+
+% Table of contents
+\tableofcontents
+% Remove page number on table of contents
+\thispagestyle{empty}
+% clear the rest of the page
+\cleardoublepage
+
+% Reset page numbering
+% Start page number from 1 on the next page
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% List of figures
+\listoffigures
+\addcontentsline{toc}{section}{\numberline{}List of figures}
+\cleardoublepage
+
+% List of tables
+\listoftables
+\addcontentsline{toc}{section}{\numberline{}List of tables}
+\cleardoublepage
+
+% Include Project description
+\include{project_description}
+% Include direct kinematics section
+\include{direct_kinematics}
+% Include inverse kinematics section
+\include{inverse_kinematics}
+% Include kinematics test section
+\include{kinematics_test}
+% Include trajectory planning section
+\include{trajectory_planning}
+% Include hardware section
+\include{hardware}
+\end{document}

@@ -1,0 +1,11 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Kinematic structure of the robot}}{4}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces DH parameters verification}}{5}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces DH frame assignment}}{6}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Direct kinematics test}}{14}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Inverse kinematics test}}{14}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Trajectory planning}}{15}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces LSPB trajectory for a single joint}}{16}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Synchronized LSPB trajectory}}{17}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Task space Vs. Joint space trajectory, end-effector pose for triangular profile.}}{18}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Pick and place task}}{18}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Task graph}}{20}{figure.11}%
