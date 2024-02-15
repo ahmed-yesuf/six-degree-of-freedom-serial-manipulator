@@ -1,12 +1,13 @@
 # six-degree-of-freedom-serial-manipulator
-Kinematic (direct and inverse) analysis and trajectory (joint space and task space) planning 
-for a 6 dof anthropomorphic arm with spherical wris.
+Implementation of kinematics analysis (both direct as well as inverse) and trajectory planning (task and joint space) for a six DoF anthropomorphic arm with a spherical wrist.
 
-# Usage
+## Usage
 1. Clone this repository
 ```bash
 git clone git@github.com:ahmed-yesuf/six-degree-of-freedom-serial-manipulator.git
 ```
-2. Execute: `initialization.m`
+2. Execute: `performPickAndPlace.m` - you can also modify the content of this file to try different pick and place positions.
 
-GUI is being developed for easier usage
+## Simulation result
+![sample result](Report/result.jpg)
+
